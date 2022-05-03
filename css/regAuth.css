@@ -1,0 +1,173 @@
+body{
+	display: grid;
+	grid-template-columns: 1fr 10fr 1fr;
+	grid-auto-rows: 1fr 0.2fr 8fr 1fr;
+	grid-template-areas: 'header header header''. . .''. content .''. footer .';
+	height: 50vw;
+}
+.amheader{
+	grid-area: header;
+	margin: 0;
+	padding: 0;
+	
+}
+.amcontent{
+	grid-area: content;
+	background-color:#E5E5E5 ;
+	margin: 0;
+	padding: 0;
+}
+.amfooter{
+	grid-area: footer;
+	margin: 0;
+	padding: 0;
+}
+.amcontent{
+	display: grid;
+	grid-template-columns: 1fr 4fr 4fr 1fr;
+	grid-auto-rows: 1fr 4fr 1fr;
+	grid-template-areas: 
+	'. . . .'
+	'. menu1 menu2 .'
+	'. . . .';
+	height: 100%;
+}
+.menu1{
+	grid-area: menu1;
+	background-color: green;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows:1fr;
+	grid-template-areas: 
+	'regForm';
+	height: 100%;
+}
+.regForm{
+	grid-area: regForm;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+	grid-auto-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	'. . . . .'
+	'regTitle regTitle regTitle regTitle regTitle'
+	'. labelName . nameInput .'
+	'. labelSurname . surnameInput .'
+	'. labelIdnp . idnpInput .'
+	'. labelUsername . usernameInput .'
+	'. labelPassword . passwordInput .'
+	'. . . regSubmit .'
+	'. . . . .';
+	height: 100%;
+}
+.regTitle{
+	grid-area: regTitle;
+	text-align: center;
+	font-size:1.4em;
+}
+.labelName{
+	grid-area: labelName;
+	text-align: left;
+}
+.nameInput{
+	grid-area: nameInput;
+	text-align: center;
+	height: 30px;
+}
+.labelSurname{
+	grid-area: labelSurname;
+	text-align: left;
+}
+.surnameInput{
+	grid-area: surnameInput;
+	text-align: center;
+	height: 30px;
+}
+.labelIdnp{
+	grid-area: labelIdnp;
+	text-align: left;
+}
+.idnpInput{
+	grid-area: idnpInput;
+	text-align: center;
+	height: 30px;
+}
+.labelUsername{
+	grid-area: labelUsername;
+	text-align: left;
+}
+.usernameInput{
+	grid-area: usernameInput;
+	text-align: center;
+	height: 30px;
+}
+.labelPassword{
+	grid-area: labelPassword;
+	text-align: left;
+}
+.passwordInput{
+	grid-area: passwordInput;
+	text-align: center;
+	height: 30px;
+}
+.regSubmit{
+	grid-area: regSubmit;
+	height: 30px;
+}
+
+
+/*2*/
+.menu2{
+	grid-area: menu2;
+	background-color:#e6e825;  //#FDFF3A;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows:1fr;
+	grid-template-areas: 
+	'authForm';
+	height: 100%;
+	transition: 0.5s;
+}
+.authForm{
+	grid-area: authForm;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+	grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	'. . . . .' 
+	'authTitle authTitle authTitle authTitle authTitle'
+	'. . . . .'
+	'. labelLogin . loginInput .'
+	'. labelPass . passInput .'
+	'. . . . .'
+	'. . . authSubmit .'
+	'. . . . .';
+	height: 100%;
+}
+.authTitle{
+	grid-area: authTitle;
+	text-align: center;
+	font-size:1.4em;
+}
+.labelLogin{
+	grid-area: labelLogin;
+	height: 30px;
+}
+.loginInput{
+	grid-area: loginInput;
+	text-align: center;
+	height: 30px;
+}
+.labelPass{
+	grid-area: labelPass;
+	height: 30px;
+}
+.passInput{
+	grid-area: passInput;
+	text-align: center;
+	height: 30px;
+}
+.authSubmit{
+	grid-area: authSubmit;
+	height: 30px;
+}

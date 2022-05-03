@@ -1,0 +1,345 @@
+.usersContent{
+ 		display: grid;
+ 		grid-template-areas:
+ 		'usersContentAdd' 
+ 		'usersContentUpdate'
+ 		'usersContentDelete';
+ 		grid-template-columns: 1fr;
+ 		grid-template-rows: 1fr 1fr 1fr;
+}
+/*USERSCONTENT-ADD*/
+.usersContentAdd{
+ 	grid-area: usersContentAdd;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'UCATitle UCATitle . . . . .' 
+ 	'. . . . . . .'
+ 	'UCANameLabel . UCANameInput . UCALoginLabel . UCALoginInput'
+ 	'UCASurnameLabel . UCASurnameInput . UCAPasswordLabel . UCAPasswordInput'
+ 	'UCAIDNPLabel . UCAIDNPInput . . . .'
+ 	'. . . . . . UCAButtonLabel';
+ 	grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
+ }
+.UCATitle{
+	grid-area: UCATitle;
+	font-size: 1.5em;
+	background-color: #faf7f7;
+}
+
+
+.UCANameLabel{
+
+	grid-area: UCANameLabel;
+}
+.UCANameInput{
+
+	grid-area: UCANameInput;
+}
+.UCALoginLabel{
+
+	grid-area: UCALoginLabel;
+}
+.UCALoginInput{
+
+	grid-area: UCALoginInput;
+}
+.UCASurnameLabel{
+
+	grid-area: UCASurnameLabel;
+}
+.UCASurnameInput{
+
+	grid-area: UCASurnameInput;
+}
+.UCAPasswordLabel{
+
+	grid-area: UCAPasswordLabel;
+}
+.UCAPasswordInput{
+
+	grid-area: UCAPasswordInput;
+}
+.UCAIDNPLabel{
+
+	grid-area: UCAIDNPLabel;
+}
+.UCAIDNPInput{
+
+	grid-area: UCAIDNPInput;
+}
+.UCAButtonLabel{
+
+	grid-area: UCAButtonLabel;
+}
+/*UPDATE*/
+ .usersContentUpdate{
+ 	grid-area: usersContentUpdate;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'UCUTitle UCUTitle . . . . .'
+ 	'. . . . . . .'
+ 	'UCUNameLabel . UCUNameInput . . . .'
+ 	'UCUSurnameLabel . UCUSurnameInput . . . .'
+ 	'UCUIDLabel . UCUIDInput . . . .'
+ 	'. . . . . . UCUButtonLabel';
+ 	grid-template-columns:0.2fr 0.2fr 0.35fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
+ }
+.UCUTitle{
+	grid-area: UCUTitle;
+	font-size: 1.5em;
+	background-color: #faf7f7;
+}
+
+.UCUNameLabel{
+ 	grid-area: UCUNameLabel;
+ }
+.UCUNameInput{
+	grid-area: UCUNameInput;
+}
+
+.UCUSurnameLabel{
+	grid-area: UCUSurnameLabel;
+}
+
+.UCUSurnameInput{
+	grid-area: UCUSurnameInput;
+}
+
+.UCUIDLabel{
+	grid-area: UCUIDLabel;
+}
+
+.UCUIDInput{
+	grid-area: UCUIDInput;
+}
+
+.UCUButtonLabel{
+	grid-area: UCUButtonLabel;
+}
+/*DELETE*/
+ .usersContentDelete{
+ 	grid-area: usersContentDelete;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'UCDTitle UCDTitle . . . . .'
+ 	'. . . . . . .'
+ 	'UCDIDLabel . UCDIDInput . . . .'
+ 	'. . . . . . UCDButtonLabel';
+ 	grid-template-columns:0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 0.4fr 0.2fr 1fr 1fr;
+ 	height: 100%
+}
+.UCDTitle{
+	grid-area:UCDTitle ;
+	font-size: 1.5em;
+	background-color: #faf7f7;
+}
+
+.UCDIDLabel{
+	grid-area:UCDIDLabel ;
+}
+.UCDIDInput{
+	grid-area:UCDIDInput ;
+}
+.UCDButtonLabel{
+	grid-area:UCDButtonLabel ;
+}
+
+
+
+/*managersContent*/
+.managersContent{
+	display: grid;
+ 	grid-template-areas:
+ 	'managersContentAdd' 
+ 	'managersContentDelete';
+ 	grid-template-columns: 1fr;
+ 	grid-template-rows: 1fr 1fr;
+}
+.managersContentDelete{
+	grid-area: managersContentDelete;
+	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'MCDTitle MCDTitle . . . . .' 
+ 	'. . . . . . .'
+ 	'MCDSearchLabel . MCDSearchInput . . . .'
+ 	'. . . . . . MCDButtonLabel';
+ 	grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr;
+}
+.MCDTitle{
+	grid-area: MCDTitle;
+}
+.MCDSearchLabel{
+	grid-area: MCDSearchLabel;
+}
+.MCDSearchInput{
+	grid-area: MCDSearchInput;
+}
+.MCDButtonLabel{
+	grid-area: MCDButtonLabel;
+}
+.managersContentAdd{
+ 	grid-area: managersContentAdd;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'MCATitle MCATitle . . . . .' 
+ 	'. . . . . . .'
+ 	'MCASearchLabel . MCASearchInput . . . .'
+ 	'. . . . . . MCAButtonLabel';
+ 	grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr;
+ }
+.MCATitle{
+	grid-area: MCATitle;
+}
+.MCASearchLabel{
+	grid-area:MCASearchLabel ;
+}
+.MCASearchInput{
+	grid-area:MCASearchInput ;
+}
+.MCAButtonLabel{
+	grid-area:MCAButtonLabel ;
+}
+
+
+
+/*productsContent*/
+.productsContent{
+ 		display: grid;
+ 		grid-template-areas:
+ 		'productsContentAdd' 
+ 		'productsContentUpdate'
+ 		'productsContentDelete';
+ 		grid-template-columns: 1fr;
+ 		grid-template-rows: 1fr 1fr 1fr;
+ 		height: 100%;
+}
+
+.productsContentAdd{
+ 	grid-area: productsContentAdd;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'PCATitle PCATitle . . . . .' 
+ 	'. . . . . . .'
+ 	'PCANameLabel . PCANameInput . . . .'
+ 	'PCAWeightLabel . PCAWeightInput . . . .'
+ 	'PCAPriceLabel . PCAPriceInput . . . .'
+ 	'. . . . . . PCAButtonLabel';
+ 	grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
+ }
+ .PCATitle{
+ 	grid-area: PCATitle;
+ 	font-size: 1.5em;
+	background-color: #faf7f7;
+ }
+ 
+
+ .PCANameLabel{
+ 	grid-area: PCANameLabel;
+ }
+ .PCANameInput{
+ 	grid-area: PCANameInput;
+ }
+ .PCAWeightLabel{
+ 	grid-area: PCAWeightLabel;
+ }
+ .PCAWeightInput{
+ 	grid-area: PCAWeightInput;
+ }
+ .PCAPriceLabel{
+ 	grid-area: PCAPriceLabel;
+ }
+ .PCAPriceInput{
+ 	grid-area: PCAPriceInput;
+ }
+ .PCAButtonLabel{
+ 	grid-area: PCAButtonLabel;
+ }
+
+
+.productsContentUpdate{
+ 	grid-area: productsContentUpdate;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'PCUTitle PCUTitle . . . . .'
+ 	'. . . . . . .'
+ 	'PCUNameLabel . PCUNameInput . . . .'
+ 	'PCUWeightLabel . PCUWeightInput . . . .'
+ 	'PCUPriceLabel . PCUPriceInput . . . .'
+ 	'PCUIDLabel . PCUIDInput . . . .'
+ 	'. . . . . . PCUButtonLabel';
+ 	grid-template-columns:0.2fr 0.2fr 0.35fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+ }
+.PCUTitle{
+	grid-area:PCUTitle ;
+}
+
+.PCUNameLabel{
+	grid-area:PCUNameLabel ;
+}
+.PCUNameInput{
+	grid-area:PCUNameInput ;
+}
+.PCUWeightLabel{
+	grid-area:PCUWeightLabel ;
+}
+.PCUWeightInput{
+	grid-area:PCUWeightInput ;
+}
+.PCUPriceLabel{
+	grid-area:PCUPriceLabel ;
+}
+.PCUPriceInput{
+	grid-area:PCUPriceInput ;
+}
+.PCUIDLabel{
+	grid-area:PCUIDLabel ;
+}
+.PCUIDInput{
+	grid-area:PCUIDInput ;
+}
+.PCUButtonLabel{
+	grid-area:PCUButtonLabel ;
+}
+/*DELETE*/
+.productsContentDelete{
+ 	grid-area: productsContentDelete;
+ 	border-top: solid #ffa561 4px;
+ 	display: grid;
+ 	grid-template-areas:
+ 	'PCDTitle PCDTitle . . . . .'
+ 	'. . . . . . .'
+ 	'PCDIDLabel . PCDIDInput . . . .'
+ 	'. . . . . . PCDButtonLabel';
+ 	grid-template-columns:0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 1fr;
+ 	grid-template-rows: 0.4fr 0.2fr 1fr 1fr;
+ 	height: 100%
+}
+.PCDTitle{
+	grid-area:PCDTitle ;
+	font-size: 1.5em;
+	background-color: #faf7f7;
+}
+
+.PCDIDLabel{
+	grid-area:PCDIDLabel ;
+}
+.PCDIDInput{
+	grid-area:PCDIDInput ;
+}
+.PCDButtonLabel{
+	grid-area:PCDButtonLabel ;
+}

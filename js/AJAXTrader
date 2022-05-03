@@ -1,0 +1,6 @@
+class AJAXTrader{
+	var xmlHttp = new XMLHttpRequest();;
+	get xmlHttp(){
+		return xmlHttp;
+	}
+}

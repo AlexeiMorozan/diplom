@@ -1,0 +1,30 @@
+.amcontent{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-auto-rows: 4fr 1fr 1fr;
+	grid-template-areas: 
+	'amcontent_logo amcontent_logo'
+	'menu1 menu2'
+	'menu3 menu4';
+	height: 100%;
+}
+.amcontent_logo{
+	grid-area: amcontent_logo;
+}
+.amcontent_logo>img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.menu1{
+	grid-area: menu1;
+}
+.menu2{
+	grid-area: menu2;
+}
+.menu3{
+	grid-area: menu3;
+}
+.menu4{
+	grid-area: menu4;
+}

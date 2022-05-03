@@ -1,0 +1,177 @@
+body{
+ 		display: grid;
+ 		grid-template-areas:
+ 			'leftPanel content';
+ 		grid-template-rows: 1fr;
+ 		grid-template-columns: 2fr 10fr;
+ 		height: 10vw;
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+ 	.leftPanel{
+ 		grid-area: leftPanel;
+ 		display: grid;
+ 		grid-template-areas:
+ 			'leftPanelName'
+ 			'leftPanelMenu';
+ 		grid-template-rows: 1fr 12fr;
+ 		grid-template-columns: 1fr;
+ 		height: 100%;
+ 		background-color:#faf7f7;
+ 	}
+ 	.leftPanelName{
+ 		grid-area: leftPanelName;
+
+ 	}
+ 	#leftPanelName{
+ 		height: 100%;
+ 		width: 100%;
+ 		text-align: center;
+ 		font-size: 1.5em;
+ 		background-color: #ffa561;
+ 		color: black;
+ 		font-weight: 600;
+ 	}
+ 	.leftPanelMenu{
+ 		grid-area: leftPanelMenu;
+ 		display: grid;
+ 		grid-template-areas:
+ 			'menuUser'
+ 			'menuProduct'
+ 			'menuManager'
+ 			'tableUser'
+ 			'tableProduct'
+ 			'tableManager'
+ 			'logs'
+ 			'.';
+ 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr;
+ 		grid-template-columns: 1fr;
+ 		height: 100%;		
+ 	}
+ 	.menuUser{grid-area: menuUser;}
+ 	.menuProduct{grid-area: menuProduct;}
+ 	.menuManager{grid-area: menuManager;}
+ 	.tableUser{grid-area: tableUser;}
+ 	.tableProduct{grid-area: tableProduct;}
+ 	.tableManager{grid-area: tableManager;}
+ 	.logs{grid-area: logs;}
+
+	.menuUser,
+ 	.menuProduct,
+ 	.menuManager,
+ 	.tableUser,
+ 	.tableProduct,
+ 	.tableManager,
+ 	.logs{
+ 		font-size: 1.1em;
+ 		transition: 0.8s;
+ 		color: black; 		
+ 	}
+ 	.menuUser>label,
+ 	.menuProduct>label,
+ 	.menuManager>label,
+ 	.tableUser>label,
+ 	.tableProduct>label,
+ 	.tableManager>label,
+ 	.logs>label{
+ 		display: block;
+ 		height: 100%;
+ 		width: 100%;
+ 		line-height: 80px;
+ 		text-align: center;
+ 	}
+
+ 	.menuUser>label:hover,
+ 	.menuProduct>label:hover,
+ 	.menuManager>label:hover,
+ 	.tableUser>label:hover,
+ 	.tableProduct>label:hover,
+ 	.tableManager>label:hover,
+ 	.logs>label:hover{
+ 		background-color: #2e2d2d;
+ 		cursor: pointer;
+ 		transition: 0.5s;
+ 		color: white;
+ 	}
+
+ 	.content{
+ 		grid-area: content;
+		display: grid;
+ 		grid-template-areas:
+ 			'formSubmit';
+ 		grid-template-rows: 1fr;
+ 		grid-template-columns:1fr;
+ 		height: 100%;
+ 	}
+
+ 	.formSubmit{
+ 		grid-area: formSubmit;
+		display: grid;
+ 		grid-template-areas:
+ 			'. . .'
+ 			'. contentBlock .'
+ 			'. . .';
+ 		grid-template-rows: 0.5fr 10fr 0.5fr;
+ 		grid-template-columns: 1fr 20fr 1fr;
+ 		height: 100%;
+ 	}
+ 	/*CLASSES*/
+
+ 	/*USERSINFOCONTENT*/
+ 	.usersInfoContent{
+ 		background-color: white
+ 	}
+ 	/*PRODUCTSINFOCONTENT*/
+	.productsInfoContent{
+		background-color: brown;
+	}
+	/*MANAGERSINFOCONTENT*/
+ 	.managersInfoContent{
+ 		background-color: yellow;
+	}
+	/*LOGSCONTENT*/
+	.logsContent{
+		background-color: cyan;
+	}
+ 	.activeContentBlock{
+ 		grid-area: contentBlock;
+ 	}
+ 	.dispNone{
+ 		display: none;
+ 	}
+
+
+
+
+	/* CSS */
+	.button-52 {
+	  font-size: 16px;
+	  font-weight: 200;
+	  letter-spacing: 1px;
+	  padding: 13px 20px 13px;
+	  outline: 0;
+	  border: 1px solid black;
+	  cursor: pointer;
+	  position: relative;
+	  background-color: rgba(0, 0, 0, 0);
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+
+	.button-52:after {
+	  content: "";
+	  background-color: #ffe54c;
+	  width: 100%;
+	  z-index: -1;
+	  position: absolute;
+	  height: 100%;
+	  top: 7px;
+	  left: 7px;
+	  transition: 0.2s;
+	}
+
+	.button-52:hover:after {
+	  top: 0px;
+	  left: 0px;
+	}
